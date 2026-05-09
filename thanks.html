@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micromouse Odesa - Дякуємо!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgDark: '#050A14',
+                        bgDarker: '#020408',
+                        neonCyan: '#00FFFF',
+                        neonPurple: '#D600FF',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        cyber: ['Orbitron', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'neon-cyan': '0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #050A14;
+            color: white;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .cyber-grid {
+            background-size: 50px 50px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+            -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+        }
+
+        .glass-panel {
+            background: rgba(11, 16, 38, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-gradient {
+            background: linear-gradient(90deg, #00FFFF, #D600FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="antialiased flex items-center justify-center min-h-screen relative">
+
+    <div class="absolute inset-0 z-[-1]">
+        <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neonCyan/10 rounded-full blur-[100px]">
+        </div>
+        <div class="absolute inset-0 cyber-grid"></div>
+    </div>
+
+    <div class="container mx-auto px-6 text-center relative z-10">
+        <div class="glass-panel max-w-lg mx-auto p-6 md:p-12 rounded-3xl border-t border-neonCyan/50">
+
+            <div
+                class="w-20 h-20 mx-auto mb-6 rounded-full bg-neonCyan/20 flex items-center justify-center text-neonCyan shadow-[0_0_20px_rgba(0,255,255,0.3)]">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+
+            <h1 class="font-cyber text-3xl md:text-4xl font-bold mb-4 text-white">
+                ЗАЯВКУ <br><span class="text-gradient">ПРИЙНЯТО!</span>
+            </h1>
+
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                Дякуємо за реєстрацію. Ми вже обробляємо ваші дані. Перевірте пошту — ми надішлемо деталі найближчим
+                часом.
+            </p>
+
+            <a href="index.html"
+                class="inline-block px-8 py-4 bg-neonCyan text-bgDark font-cyber font-bold rounded hover:bg-white hover:shadow-neon-cyan transition-all duration-300">
+                ПОВЕРНУТИСЯ НА ГОЛОВНУ
+            </a>
+        </div>
+
+        <p class="mt-8 text-gray-500 text-sm font-cyber tracking-widest">MICROMOUSE.ODS</p>
+    </div>
+
+</body>
+
+</html>

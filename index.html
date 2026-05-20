@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micromouse Odesa - 3D</title>
+    <title>Robo Intelligence - 2D та 3D Змагання Роботів</title>
 
     <!-- Шрифти -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -188,14 +188,14 @@
                     <img src="onu.png" alt="ONU Logo" class="w-6 h-6 object-contain" onerror="this.style.display='none'">
                 </div>
                 <span class="font-display font-bold text-base md:text-lg tracking-widest text-white transition-colors duration-300">
-                    ODS<span class="text-liquidCyan text-glow-cyan transition-colors duration-300">.MOUSE</span>
+                    ROBO<span class="text-liquidCyan text-glow-cyan transition-colors duration-300">.INTEL</span>
                 </span>
             </div>
 
             <div class="hidden md:flex items-center gap-8 font-sans font-medium text-sm tracking-widest">
-                <a href="#about" class="text-gray-200 hover:text-liquidCyan transition-colors duration-300">ПРО ПОДІЮ</a>
+                <a href="#about" class="text-gray-200 hover:text-liquidCyan transition-colors duration-300">ПРО ЗМАГАННЯ</a>
                 <a href="#participants" class="text-gray-200 hover:text-liquidCyan transition-colors duration-300">УЧАСНИКИ</a>
-                <a href="#prizes" class="text-gray-200 hover:text-liquidMagenta transition-colors duration-300">ПРИЗИ</a>
+                <a href="#prizes" class="text-gray-200 hover:text-liquidMagenta transition-colors duration-300">НАГОРОДИ</a>
             </div>
 
             <a href="#register" class="hidden md:inline-flex relative items-center justify-center px-6 py-2 overflow-hidden font-bold rounded-full group bg-white/10 border border-white/20 hover:border-liquidCyan transition-all duration-300">
@@ -216,9 +216,10 @@
         <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-liquidCyan/20 blur-[80px] rounded-full pointer-events-none"></div>
         <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-liquidPurple/20 blur-[80px] rounded-full pointer-events-none"></div>
 
-        <a href="#about" class="relative z-10 text-white hover:text-liquidCyan transition-colors mobile-link drop-shadow-md">ПРО ПОДІЮ</a>
+        <a href="#about" class="relative z-10 text-white hover:text-liquidCyan transition-colors mobile-link drop-shadow-md">ПРО ЗМАГАННЯ</a>
         <a href="#participants" class="relative z-10 text-white hover:text-liquidCyan transition-colors mobile-link drop-shadow-md">УЧАСНИКИ</a>
-        <a href="#prizes" class="relative z-10 text-white hover:text-liquidMagenta transition-colors mobile-link drop-shadow-md">ПРИЗИ</a>
+        <a href="#prizes" class="relative z-10 text-white hover:text-liquidMagenta transition-colors mobile-link drop-shadow-md">НАГОРОДИ</a>
+        <a href="#coordinators" class="relative z-10 text-white hover:text-liquidPurple transition-colors mobile-link drop-shadow-md">КООРДИНАТОРИ</a>
         <a href="#register" class="relative z-10 glass-liquid rounded-full px-10 py-4 text-liquidCyan font-bold mobile-link border-liquidCyan/50 bg-white/5">РЕЄСТРАЦІЯ</a>
 
         <button id="close-menu-btn" class="absolute top-6 right-6 p-4 text-white hover:text-liquidMagenta transition-colors z-20 focus:outline-none">
@@ -233,12 +234,12 @@
                 <div class="inline-block glass-liquid rounded-full px-5 py-2">
                     <span class="text-xs font-bold tracking-[0.3em] uppercase text-liquidCyan text-glow-cyan">Вперше в Україні</span>
                 </div>
-                <h1 class="font-display text-4xl sm:text-6xl lg:text-8xl font-black leading-tight sm:leading-none drop-shadow-2xl">
-                    <span class="block text-white mb-2 opacity-90">MICROMOUSE</span>
-                    <span class="gradient-text leading-normal">3D ЗМАГАННЯ</span>
+                <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight sm:leading-none drop-shadow-2xl">
+                    <span class="block text-white mb-2 opacity-90">ROBO INTELLIGENCE</span>
+                    <span class="gradient-text leading-normal text-2xl sm:text-3xl lg:text-4xl xl:text-5xl block mt-4 tracking-wide">2D-ТРАСА ТА 3D-ЛАБІРИНТ</span>
                 </h1>
                 <p class="font-sans text-base sm:text-lg md:text-xl font-light text-gray-300 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                    Алгоритми, сенсори та швидкість. Проведи свого робота крізь <span class="font-medium text-white">тривимірний лабіринт</span> та доведи свою майстерність.
+                    Алгоритми, сенсори та швидкість. Проведи свого робота крізь <span class="font-medium text-white">тривимірний лабіринт</span> або стань найшвидшим на <span class="font-medium text-white">кільцевій 2D-трасі</span>.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start pt-4">
                     <a href="#register" class="glass-liquid rounded-2xl px-8 sm:px-10 py-4 font-display font-bold tracking-widest text-base sm:text-lg bg-liquidCyan/10 hover:bg-liquidCyan/20 text-white flex items-center justify-center gap-3 group">
@@ -251,13 +252,17 @@
             <div class="relative flex justify-center items-center h-[350px] sm:h-[400px] lg:h-[500px]">
                 <div class="absolute w-[90%] sm:w-[80%] h-[90%] sm:h-[80%] glass-liquid shape-blob bg-white/5 border-2 border-liquidCyan/40 backdrop-blur-3xl shadow-[0_0_50px_rgba(0,240,255,0.2)] z-10 flex items-center justify-center p-2">
                     <div class="w-full h-full shape-blob overflow-hidden relative">
-                        <img src="banner.png" alt="3D Maze Robot" class="w-full h-full object-cover opacity-80 mix-blend-screen" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800'">
+                        <img src="banner.png" alt="Robot in action" class="w-full h-full object-cover opacity-80 mix-blend-screen" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800'">
                         <div class="absolute inset-0 bg-gradient-to-t from-deepSpace via-transparent to-transparent"></div>
                     </div>
                 </div>
-                <div class="absolute top-4 right-4 sm:top-10 sm:right-10 w-16 h-16 sm:w-20 sm:h-20 glass-liquid rounded-full shape-blob flex items-center justify-center bg-liquidMagenta/10 border-liquidMagenta/30 animate-[liquidFloat_4s_ease-in-out_infinite_reverse] z-20">
-                    <span class="font-display font-bold text-liquidMagenta text-sm sm:text-base">2026</span>
+                <!-- Плашка з датою -->
+                <div class="absolute top-4 right-4 sm:top-10 sm:right-10 w-24 h-24 sm:w-28 sm:h-28 glass-liquid rounded-full shape-blob flex flex-col items-center justify-center bg-liquidMagenta/20 border-liquidMagenta/40 animate-[liquidFloat_4s_ease-in-out_infinite_reverse] z-20 p-2 shadow-[0_0_20px_rgba(255,0,85,0.3)]">
+                    <span class="font-display font-black text-white text-lg sm:text-xl leading-none">27.05</span>
+                    <span class="font-display font-bold text-liquidMagenta text-sm sm:text-base leading-none my-1">-</span>
+                    <span class="font-display font-black text-white text-lg sm:text-xl leading-none">28.05</span>
                 </div>
+                <!-- Плашка ОНУ -->
                 <div class="absolute bottom-4 left-4 sm:bottom-10 sm:left-10 w-24 h-24 sm:w-32 sm:h-32 glass-liquid rounded-full shape-blob flex items-center justify-center bg-liquidCyan/10 border-liquidCyan/30 animate-[liquidFloat_7s_ease-in-out_infinite] z-20 p-2 sm:p-4 text-center">
                     <span class="font-sans text-[10px] sm:text-xs font-bold text-white uppercase tracking-widest">ОНУ імені<br>І.І. Мечникова</span>
                 </div>
@@ -269,36 +274,59 @@
     <section id="about" class="py-20 md:py-32 relative z-10">
         <div class="container mx-auto px-6">
             <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black text-center mb-12 md:mb-20">
-                ЩО ТАКЕ <span class="text-liquidCyan text-glow-cyan">MICROMOUSE?</span>
+                ЩО ТАКЕ <span class="text-liquidCyan text-glow-cyan">ROBO INTELLIGENCE?</span>
             </h2>
-            <div class="grid md:grid-cols-3 gap-8 md:gap-10">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                
+                <!-- Card 1: Автономність -->
                 <div class="glass-liquid glass-card rounded-3xl p-6 md:p-8 group hover:-translate-y-4">
                     <div class="w-16 h-16 md:w-20 md:h-20 shape-blob glass-liquid mb-6 md:mb-8 flex items-center justify-center bg-liquidCyan/10 border-liquidCyan/30 text-liquidCyan group-hover:scale-110 transition-transform">
                         <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </div>
                     <h3 class="font-display text-xl md:text-2xl font-bold mb-3 md:mb-4 tracking-wide text-white">АВТОНОМНІСТЬ</h3>
                     <p class="font-sans text-gray-200 md:text-gray-400 text-sm md:text-base leading-relaxed md:font-light">
-                        Робот самостійно досліджує невідомий лабіринт, обчислює найкоротший шлях та повертається на старт без втручання людини.
+                        Робот самостійно досліджує шлях, обчислює найкоротший маршрут та приймає рішення без жодного втручання людини.
                     </p>
                 </div>
+
+                <!-- Card 2: 3D Вимір -->
                 <div class="glass-liquid glass-card rounded-3xl p-6 md:p-8 group hover:-translate-y-4 md:mt-12 border-t-liquidPurple/50">
                     <div class="w-16 h-16 md:w-20 md:h-20 shape-blob glass-liquid mb-6 md:mb-8 flex items-center justify-center bg-liquidPurple/10 border-liquidPurple/30 text-liquidPurple group-hover:scale-110 transition-transform">
                         <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
                     </div>
-                    <h3 class="font-display text-xl md:text-2xl font-bold mb-3 md:mb-4 tracking-wide text-white">3D ВІМIР</h3>
+                    <h3 class="font-display text-xl md:text-2xl font-bold mb-3 md:mb-4 tracking-wide text-white">3D-ЛАБІРИНТ</h3>
                     <p class="font-sans text-gray-200 md:text-gray-400 text-sm md:text-base leading-relaxed md:font-light">
-                        Забудьте про плоскі поверхні. Лабіринт має рампи, мости та перепади висот. Це виклик для сенсорів та алгоритмів балансування.
+                        Складна система стін і коридорів за стандартами IEEE. Робот має побудувати карту невідомого простору 16х16 та знайти шлях до центру.
                     </p>
                 </div>
+
+                <!-- Card 3: 2D Траса -->
                 <div class="glass-liquid glass-card rounded-3xl p-6 md:p-8 group hover:-translate-y-4">
                     <div class="w-16 h-16 md:w-20 md:h-20 shape-blob glass-liquid mb-6 md:mb-8 flex items-center justify-center bg-liquidMagenta/10 border-liquidMagenta/30 text-liquidMagenta group-hover:scale-110 transition-transform">
                         <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
-                    <h3 class="font-display text-xl md:text-2xl font-bold mb-3 md:mb-4 tracking-wide text-white">ШВИДКІСТЬ</h3>
+                    <h3 class="font-display text-xl md:text-2xl font-bold mb-3 md:mb-4 tracking-wide text-white">2D-ТРАСА</h3>
                     <p class="font-sans text-gray-200 md:text-gray-400 text-sm md:text-base leading-relaxed md:font-light">
-                        Після картографування лабіринту робот має проїхати від старту до центру за мінімальний час. Долі секунди вирішують все.
+                        Швидкісні перегони на кільцевій трасі. Подолай прямолінійні ділянки, перехрестя та круті повороти по чорній лінії за мінімальний час.
                     </p>
                 </div>
+
+                <!-- Card 4: Правила -->
+                <div class="glass-liquid glass-card rounded-3xl p-6 md:p-8 group hover:-translate-y-4 md:mt-12 border-t-liquidCyan/50">
+                    <div class="w-16 h-16 md:w-20 md:h-20 shape-blob glass-liquid mb-6 md:mb-8 flex items-center justify-center bg-white/10 border-white/30 text-white group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="font-display text-xl md:text-2xl font-bold mb-3 md:mb-4 tracking-wide text-white">ПРАВИЛА</h3>
+                    <p class="font-sans text-gray-200 md:text-gray-400 text-sm md:text-base leading-relaxed md:font-light mb-4">
+                        Детальний регламент змагань для обох категорій: технічні вимоги до роботів, формат раундів та система штрафів.
+                    </p>
+                    <a href="#register" class="inline-flex items-center gap-2 text-liquidCyan font-bold hover:text-white transition-colors text-sm font-display tracking-widest">
+                        ЧИТАТИ ДАЛІ
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -313,7 +341,7 @@
                         <span class="gradient-text">ВИКЛИК ІНЖЕНЕРІЇ?</span>
                     </h2>
                     <div class="space-y-4 md:space-y-6">
-                        <div class="glass-liquid glass-card rounded-2xl p-5 md:p-6 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 md:gap-6 group hover:bg-white/5 transition-colors cursor-default">
+                        <div class="glass-liquid glass-card rounded-2xl p-5 md:p-6 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 md:gap-6 group hover:bg-white/5 transition-colors cursor-default border-t sm:border-t-0 sm:border-l-liquidCyan/50">
                             <div class="w-14 h-14 md:w-16 md:h-16 rounded-full glass-liquid flex-shrink-0 flex items-center justify-center text-liquidCyan font-display font-bold text-xl md:text-2xl shadow-[inset_0_0_10px_rgba(0,240,255,0.2)] group-hover:rotate-12 transition-transform">01</div>
                             <div>
                                 <h4 class="font-display text-lg md:text-xl font-bold text-white tracking-wide">СТУДЕНТИ</h4>
@@ -352,11 +380,11 @@
     <section id="prizes" class="py-20 md:py-32 relative z-10">
         <div class="container mx-auto px-6 text-center">
             <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-12 md:mb-16">
-                ПРИЗОВИЙ <span class="text-liquidMagenta text-glow-magenta">ФОНД</span>
+                НАГОРОДИ <span class="text-liquidMagenta text-glow-magenta">ПЕРЕМОЖЦЯМ</span>
             </h2>
             <div class="glass-liquid glass-card rounded-3xl md:rounded-[3rem] p-6 sm:p-8 md:p-12 max-w-4xl mx-auto relative overflow-visible border-t-liquidMagenta/40">
                 <div class="absolute -top-5 md:-top-6 left-1/2 transform -translate-x-1/2 glass-liquid rounded-full px-6 md:px-8 py-2 md:py-3 bg-deepSpace/80 font-display font-bold text-xs md:text-sm tracking-widest text-white border-liquidMagenta/50 shadow-[0_0_20px_rgba(255,0,85,0.3)] whitespace-nowrap">
-                    НАГОРОДИ ПЕРЕМОЖЦЯМ
+                    ПРИЗОВИЙ ФОНД
                 </div>
                 <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-between pt-6">
                     <div class="flex-1 text-center md:text-left flex flex-col md:flex-row gap-4 md:gap-6 items-center">
@@ -364,8 +392,8 @@
                             <svg class="w-8 h-8 md:w-10 md:h-10 drop-shadow-[0_0_10px_rgba(250,204,21,0.5)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
                         </div>
                         <div>
-                            <h4 class="font-display text-xl md:text-2xl font-bold text-white mb-2">Цінні призи від IT Family</h4>
-                            <p class="font-sans text-gray-200 md:text-gray-400 text-sm md:text-base md:font-light">Потужні гаджети, компоненти для майбутніх роботів та гранти на навчання.</p>
+                            <h4 class="font-display text-xl md:text-2xl font-bold text-white mb-2">Цінні призи та подарунки від партнерів</h4>
+                            <p class="font-sans text-gray-200 md:text-gray-400 text-sm md:text-base md:font-light">Дипломи, сертифікати (на 0,5 кредита ЄКТС), унікальний мерч та корисні технологічні подарунки для майбутніх розробок.</p>
                         </div>
                     </div>
                     <div class="hidden md:block w-px h-32 bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
@@ -375,6 +403,41 @@
                         <img src="odesaitfamily_logo.png" alt="Odesa IT Family" class="h-12 md:h-16 object-contain filter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500" onerror="this.style.display='none'">
                         <div class="font-display text-base md:text-lg font-bold tracking-widest hidden show-on-error text-white/80">ODESA IT FAMILY</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦІЯ "КООРДИНАТОРИ" -->
+    <section id="coordinators" class="py-20 md:py-32 relative z-10 bg-white/[0.02] border-y border-white/5 backdrop-blur-sm">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-black mb-12 md:mb-16">
+                КООРДИНАТОРИ
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Coord 1 -->
+                <div class="glass-liquid glass-card rounded-3xl p-6 md:p-8 flex flex-col items-center gap-3 border-t-liquidCyan/50 group hover:-translate-y-2 transition-transform">
+                    <div class="w-12 h-12 rounded-full glass-liquid bg-white/10 flex items-center justify-center mb-2 text-liquidCyan">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </div>
+                    <div class="font-display font-bold text-sm md:text-base text-white">Мартинович Лариса<br>Ярославівна</div>
+                    <a href="mailto:larysa.yaroslavna@onu.edu.ua" class="text-gray-400 text-xs md:text-sm font-sans hover:text-liquidCyan transition-colors">larysa.yaroslavna@onu.edu.ua</a>
+                </div>
+                <!-- Coord 2 -->
+                <div class="glass-liquid glass-card rounded-3xl p-6 md:p-8 flex flex-col items-center gap-3 border-t-liquidPurple/50 group hover:-translate-y-2 transition-transform">
+                    <div class="w-12 h-12 rounded-full glass-liquid bg-white/10 flex items-center justify-center mb-2 text-liquidPurple">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </div>
+                    <div class="font-display font-bold text-sm md:text-base text-white">Гунченко Юрій<br>Олександрович</div>
+                    <a href="mailto:gunchenko@onu.edu.ua" class="text-gray-400 text-xs md:text-sm font-sans hover:text-liquidPurple transition-colors">gunchenko@onu.edu.ua</a>
+                </div>
+                <!-- Coord 3 -->
+                <div class="glass-liquid glass-card rounded-3xl p-6 md:p-8 flex flex-col items-center gap-3 border-t-liquidMagenta/50 group hover:-translate-y-2 transition-transform">
+                    <div class="w-12 h-12 rounded-full glass-liquid bg-white/10 flex items-center justify-center mb-2 text-liquidMagenta">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </div>
+                    <div class="font-display font-bold text-sm md:text-base text-white">Орленко Ігор<br>Юрійович</div>
+                    <a href="https://www.linkedin.com/in/ihorlenko/" target="_blank" class="text-gray-400 text-xs md:text-sm font-sans hover:text-liquidMagenta transition-colors">Профіль LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -407,7 +470,6 @@
                 </div>
 
                 <!-- Багатошагова форма -->
-                <!-- Оновлено FBZX та PartialResponse відповідно до нової форми -->
                 <form id="custom_form" action="https://docs.google.com/forms/d/e/1FAIpQLSf2l-ghWnnavQ_-STNJUR1PxdPP6mSo4o0dwiVKZSPjS_KQSw/formResponse" method="POST" target="hidden_iframe" onsubmit="prepareSubmit(event)" class="relative z-20 flex flex-col flex-grow justify-between">
                     
                     <input type="hidden" name="fvv" value="1">
@@ -417,30 +479,30 @@
                     <!-- pageHistory динамічно оновлюється в JS -->
                     <input type="hidden" name="pageHistory" value="0,1,2,3,4,5,6,7">
 
-                    <!-- БЛОК ДЛЯ КРОКІВ ФОРМИ (щоб завжди відштовхував кнопки вниз) -->
+                    <!-- БЛОК ДЛЯ КРОКІВ ФОРМИ -->
                     <div class="flex-grow">
 
                         <!-- КРОК 0: Інформація про змагання -->
                         <div id="step_intro" class="form-step active animate-fade-in">
                             <div class="text-scrollbar pr-4 max-h-[55vh] md:max-h-[60vh] overflow-y-auto font-sans text-gray-300 text-sm md:text-base leading-relaxed">
                                 
-                                <h3 class="font-display font-bold text-liquidCyan text-xl md:text-2xl mb-4">Правила та вимоги <br><span class="text-white">Micromouse 3D</span></h3>
+                                <h3 class="font-display font-bold text-liquidCyan text-xl md:text-2xl mb-4">Правила та вимоги <br><span class="text-white">Robo Intelligence</span></h3>
                                 
                                 <p class="mb-4 text-gray-300">Змагання відкриті для всіх учасників віком від 12 років, школярів або студентів. Кожна команда має право обрати одну або обидві дисципліни, виходячи з технічних можливостей свого робота.</p>
 
                                 <div class="mb-6">
                                     <h4 class="font-bold text-white mb-2 text-lg">Дисципліна 3D-лабіринт</h4>
-                                    <p class="text-gray-400">Вимагає від робота автономного пошуку шляху до центру поля розміром 16 на 16 клітинок. Оскільки конфігурація стін унеможливлює використання простих методів обходу, учаснику необхідно реалізувати алгоритм побудови карти. Конструкція пристрою має дозволяти вільний рух у коридорах шириною 170 мм. На виконання завдання надається 10 хвилин, протягом яких можна робити декілька спроб. Фінальний результат базується на часі найшвидшого пробігу з урахуванням штрафних 0,5 секунди за кожне зіткнення зі стіною.</p>
+                                    <p class="text-gray-400">Вимагає від робота автономного пошуку шляху до центру поля розміром 16х16 клітинок. Оскільки конфігурація стін унеможливлює використання простих методів обходу, учаснику необхідно реалізувати алгоритм побудови карти. Конструкція пристрою має дозволяти вільний рух у коридорах шириною 170 мм. На виконання завдання надається 10 хвилин, протягом яких можна робити декілька спроб. Фінальний результат базується на часі найшвидшого пробігу з урахуванням штрафних 0,5 секунди за кожне зіткнення зі стіною.</p>
                                 </div>
 
                                 <div class="mb-6">
-                                    <h4 class="font-bold text-white mb-2 text-lg">Дисципліна Швидкісна траса</h4>
-                                    <p class="text-gray-400">Зосереджена на максимально швидкому подоланні кільцевого маршруту по чорній лінії. Робот повинен бути компактним, вагою до 1,5 кг та розмірами не більше 25 на 25 см. Змагання складаються з трьох раундів із різними напрямками руху, де до заліку йде найкращий час одного повного кола. Важливою умовою є точність навігації: якщо проєкція робота повністю виходить за межі лінії, заїзд вважається невдалим.</p>
+                                    <h4 class="font-bold text-white mb-2 text-lg">Дисципліна 2D-траса (Швидкісна)</h4>
+                                    <p class="text-gray-400">Робот повинен максимально швидко подолати кільцевий маршрут по чорній лінії (ширина лінії 20±3мм, мінімальний радіус повороту 75мм). Розміри робота не повинні перевищувати 25х25 см, максимальна вага — 1,5 кг. Змагання складається із 3 раундів (в один напрямок, в протилежний, і на вибір). Тривалість заїзду — до 180 секунд. Якщо проєкція робота повністю виходить за лінію траєкторії руху, спроба не зараховується. Найкращим часом вважається найменший час у будь-якому з успішних раундів.</p>
                                 </div>
 
                                 <div class="mb-6">
                                     <h4 class="font-bold text-white mb-2 text-lg">Загальні правила</h4>
-                                    <p class="text-gray-400">Передбачають повну автономність пристроїв та заборону дистанційного керування. Учасники зобов’язані самостійно забезпечити себе необхідним інструментарієм, акумуляторами та програмним забезпеченням. Перед початком заїздів усі роботи проходять обов’язкову технічну перевірку на відповідність вимогам безпеки та габаритам. Будь-яке втручання в роботу пристрою після старту або використання заборонених джерел енергії призводить до дискваліфікації.</p>
+                                    <p class="text-gray-400">Передбачають повну автономність пристроїв та заборону дистанційного керування. Учасники зобов’язані самостійно забезпечити себе необхідним інструментарієм, акумуляторами та програмним забезпеченням. Перед початком заїздів усі роботи проходять обов’язкову технічну перевірку на відповідність вимогам безпеки та габаритам.</p>
                                 </div>
 
                                 <div class="glass-liquid rounded-xl p-5 bg-liquidCyan/10 border-liquidCyan/30 mt-6 text-center shadow-[0_0_20px_rgba(0,240,255,0.1)]">
@@ -492,7 +554,7 @@
                                     </select>
                                 </div>
                                 
-                                <!-- НОВЕ ПОЛЕ: Дисципліна -->
+                                <!-- ПОЛЕ: Дисципліна -->
                                 <div class="glass-liquid p-5 rounded-2xl bg-white/5 border-white/10">
                                     <label class="block font-display text-xs font-bold tracking-wider text-gray-300 mb-1 uppercase">Дисципліна, в якій братимете участь <span class="text-liquidMagenta">*</span></label>
                                     <p class="text-gray-500 text-[10px] mb-4 font-sans">Можна обрати один варіант або одразу два</p>
@@ -510,7 +572,7 @@
                                                 <input type="checkbox" name="entry.225277814" value="Швидкісна траса" class="peer sr-only discipline-checkbox">
                                                 <svg class="w-4 h-4 text-liquidCyan opacity-0 peer-checked:opacity-100 transition-opacity drop-shadow-[0_0_8px_rgba(0,240,255,0.8)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                                             </div>
-                                            <span class="text-gray-300 font-sans text-sm group-hover:text-white transition-colors">Швидкісна траса</span>
+                                            <span class="text-gray-300 font-sans text-sm group-hover:text-white transition-colors">2D Швидкісна траса</span>
                                         </label>
                                     </div>
                                     <p id="discipline_warning" class="text-liquidMagenta text-xs mt-3 hidden font-sans font-medium">Будь ласка, оберіть хоча б одну дисципліну!</p>
@@ -543,7 +605,7 @@
                                 <div class="absolute -left-4 md:-left-6 top-0 w-1 h-full bg-liquidPurple rounded-r-md"></div>
                                 <div>
                                     <label class="block font-display text-xs font-bold tracking-wider text-gray-300 mb-2 uppercase">Навчальний заклад <span class="text-liquidMagenta">*</span></label>
-                                    <input type="text" id="uni_name" name="entry.395839910" data-required="true" placeholder="Наприклад: ОНУ ім. Мечнікова" class="w-full bg-[#0a1128]/80 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-liquidPurple focus:ring-1 focus:ring-liquidPurple/50 transition-all font-sans text-sm">
+                                    <input type="text" id="uni_name" name="entry.395839910" data-required="true" placeholder="Наприклад: ОНУ імені І.І. Мечникова" class="w-full bg-[#0a1128]/80 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-liquidPurple focus:ring-1 focus:ring-liquidPurple/50 transition-all font-sans text-sm">
                                 </div>
                                 <div>
                                     <label class="block font-display text-xs font-bold tracking-wider text-gray-300 mb-2 uppercase">Курс навчання <span class="text-liquidMagenta">*</span></label>
@@ -625,15 +687,15 @@
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-10">
             <div class="text-center md:text-left">
                 <div class="font-display text-xl md:text-2xl font-black tracking-widest mb-2">
-                    ODS<span class="text-liquidCyan text-glow-cyan">.MOUSE</span>
+                    ROBO<span class="text-liquidCyan text-glow-cyan">.INTEL</span>
                 </div>
-                <p class="font-sans text-gray-500 text-xs md:text-sm font-light mb-1">Одеський національний університет ім. І.І. Мечникова</p>
-                <p class="font-sans text-gray-500 text-xs md:text-sm font-light">Факультет математики, фізики та ІТ</p>
+                <p class="font-sans text-gray-500 text-xs md:text-sm font-light mb-1">Одеський національний університет імені І.І. Мечникова</p>
+                <p class="font-sans text-gray-500 text-xs md:text-sm font-light">Кафедра комп'ютерних систем та технологій</p>
             </div>
             <div class="flex gap-4">
-                <a href="#" class="w-10 h-10 md:w-12 md:h-12 glass-liquid shape-blob flex items-center justify-center text-gray-400 hover:text-white hover:border-liquidCyan/50 transition-all bg-white/5">IN</a>
-                <a href="#" class="w-10 h-10 md:w-12 md:h-12 glass-liquid shape-blob flex items-center justify-center text-gray-400 hover:text-white hover:border-liquidPurple/50 transition-all bg-white/5" style="animation-delay: -2s;">TG</a>
-                <a href="#" class="w-10 h-10 md:w-12 md:h-12 glass-liquid shape-blob flex items-center justify-center text-gray-400 hover:text-white hover:border-liquidMagenta/50 transition-all bg-white/5" style="animation-delay: -4s;">FB</a>
+                <a href="https://www.instagram.com/onu_mechnikov_inst" target="_blank" class="w-10 h-10 md:w-12 md:h-12 glass-liquid shape-blob flex items-center justify-center text-gray-400 hover:text-white hover:border-liquidCyan/50 transition-all bg-white/5">IG</a>
+                <a href="https://t.me/onucompete" target="_blank" class="w-10 h-10 md:w-12 md:h-12 glass-liquid shape-blob flex items-center justify-center text-gray-400 hover:text-white hover:border-liquidPurple/50 transition-all bg-white/5" style="animation-delay: -2s;">TG</a>
+                <a href="https://www.facebook.com/onupress/posts/pfbid03FcmjZbqGv6dfZnGnXzRiPJ3ygdJ8XgC3sDxHwuyJWuWtwYQfrJif4vArnySezeMl" target="_blank" class="w-10 h-10 md:w-12 md:h-12 glass-liquid shape-blob flex items-center justify-center text-gray-400 hover:text-white hover:border-liquidMagenta/50 transition-all bg-white/5" style="animation-delay: -4s;">FB</a>
             </div>
             <div class="font-sans text-gray-600 text-[10px] md:text-xs font-light tracking-widest text-center md:text-right">
                 &copy; 2026 ONU & ODESA IT FAMILY.<br>ВІД СТУДЕНТІВ ДЛЯ СТУДЕНТІВ
@@ -748,7 +810,7 @@
             const inputs = currentEl.querySelectorAll('input, select');
             let isValid = true;
             
-            // Кастомна перевірка для групи чекбоксів "Дисципліна" на кроці "Ваш статус"
+            // Кастомна перевірка для групи чекбоксів "Дисципліна"
             if (currentStepId === 'step_status') {
                 const checkboxes = currentEl.querySelectorAll('.discipline-checkbox');
                 const isChecked = Array.from(checkboxes).some(cb => cb.checked);
@@ -763,7 +825,7 @@
             }
 
             for (let input of inputs) {
-                // Ігноруємо нативну перевірку для чекбоксів, щоб не порушити логіку "або/або"
+                // Ігноруємо нативну перевірку для чекбоксів
                 if (input.type === 'checkbox') continue;
 
                 if (!input.checkValidity()) {

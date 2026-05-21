@@ -739,8 +739,8 @@
                 next: () => document.getElementById('role_select').value === 'Ментор' ? 'step_org' : 'step_status'
             },
             'step_org': {
-                back: 'step_team',
-                next: () => 'step_contacts'
+                back: 'step_role',
+                next: () => 'step_team'
             },
             'step_status': {
                 back: 'step_role',

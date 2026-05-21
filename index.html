@@ -739,7 +739,7 @@
                 next: () => document.getElementById('role_select').value === 'Ментор' ? 'step_org' : 'step_status'
             },
             'step_org': {
-                back: 'step_role',
+                back: 'step_team',
                 next: () => 'step_contacts'
             },
             'step_status': {
@@ -755,11 +755,11 @@
                 next: () => 'step_team'
             },
             'step_team': {
-                back: () => document.getElementById('status_select').value === 'Школяр' ? 'step_school' : 'step_uni',
+                back: () => document.getElementById('role_select').value === 'Ментор' ? 'step_org' : (document.getElementById('status_select').value === 'Школяр' ? 'step_school' : 'step_uni'),
                 next: () => 'step_contacts'
             },
             'step_contacts': {
-                back: () => document.getElementById('role_select').value === 'Ментор' ? 'step_org' : 'step_team',
+                back: () => 'step_team',
                 next: null 
             }
         };
@@ -872,7 +872,7 @@
 
             // Формуємо логіку pageHistory
             if (role === 'Ментор') {
-                pageHistoryInput.value = "0,1,3,7";
+                pageHistoryInput.value = "0,1,3,6,7";
             } else {
                 if (status === 'Школяр') {
                     pageHistoryInput.value = "0,1,2,4,6,7";
